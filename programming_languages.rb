@@ -43,8 +43,8 @@ def reformat_languages(languages)
         if new_hash[language_key].key?(:style) == true
           new_hash[language_key][:style] << style_key
         else 
-          #new_hash[language_key][:style] = []
-          new_hash[language_key][:style] = [style_key]
+          new_hash[language_key][:style] = []
+          new_hash[language_key][:style] << style_key
         end 
         #binding.pry
       end 
