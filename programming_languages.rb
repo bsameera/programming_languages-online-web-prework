@@ -40,7 +40,7 @@ def reformat_languages(languages)
         new_hash[language_key] = {
           :type => type_val
         }
-        
+  
         new_hash[language_key][:style] << style_key
         #binding.pry
       end 
