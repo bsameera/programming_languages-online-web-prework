@@ -40,7 +40,7 @@ def reformat_languages(languages)
         new_hash[language_key] = {
           :type => type_val
         }
-        if new_hash[language_key].key?(:style)
+        if new_hash[language_key].key?(:style) == true
           new_hash[language_key][:style] << style_key
         else 
           new_hash[language_key][:style] = []
